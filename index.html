@@ -1,0 +1,78 @@
+<html>
+<head>
+     <title>Assignment 2</title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+<body>
+
+
+<style>
+
+
+    .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding:15px;
+        
+    }
+
+    .row {
+        width:720px;
+        margin: 0px auto 0px auto;
+    }
+
+   
+</style>
+
+<body bgcolor="#f6edff">
+
+<div class="row">
+    <div class="image-container"><img id="icon1" src="img/headphones2.png" width="150" onmouseover="this.src='img/lheadphones.png';" onmouseout="this.src='img/headphones2.png';"/></div>
+    <div class="image-container"><img id="icon2" src="img/soup2.png" width="150" onmouseover="this.src='img/lsoup.png';" onmouseout="this.src='img/soup2.png';"/></div>
+    <div class="image-container"><img id="icon3" src="img/light2.png" width="150" onmouseover="this.src='img/llight.png';" onmouseout="this.src='img/light2.png';"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="icon4" src="img/mirror2.png" width="150" onmouseover="this.src='img/lmirror.png';" onmouseout="this.src='img/mirror2.png';"/></div>
+    <div class="image-container"><img id="icon5" src="img/candy2.png" width="150" onmouseover="this.src='img/lcandy.png';" onmouseout="this.src='img/candy2.png';"/></div>
+    <div class="image-container"><img id="icon6" src="img/teddy2.png" width="150" onmouseover="this.src='img/lteddy.png';" onmouseout="this.src='img/teddy2.png';"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="icon7" src="img/television2.png" width="150" onmouseover="this.src='img/ltelevision.png';" onmouseout="this.src='img/television2.png';"/></div>
+    <div class="image-container"><img id="icon8" src="img/sofa2.png" width="150" onmouseover="this.src='img/lsofa.png';" onmouseout="this.src='img/sofa2.png';"/></div>
+    <div class="image-container"><img id="icon9" src="img/home2.png" width="150" onmouseover="this.src='img/lhome.png';" onmouseout="this.src='img/home2.png';"/></div>
+</div>
+
+
+
+    <script>
+         var sound1 = new buzz.sound("sound/headphones.mp3");
+         var sound2 = new buzz.sound("sound/soup.mp3");
+         var sound3 = new buzz.sound("sound/light.mp3");
+         var sound4 = new buzz.sound("sound/mirror.mp3");
+         var sound5 = new buzz.sound("sound/candy.mp3");
+         var sound6 = new buzz.sound("sound/teddy.mp3");
+         var sound7 = new buzz.sound("sound/television.mp3");
+         var sound8 = new buzz.sound("sound/sofa.mp3");
+         var sound9 = new buzz.sound("sound/home.mp3");
+         
+
+          window.onload = function() {
+             document.getElementById('icon1').addEventListener('mouseover', function () {sound1.play();});
+             document.getElementById('icon2').addEventListener('mouseover', function () {sound2.play();});
+             document.getElementById('icon3').addEventListener('mouseover', function () {sound3.play();});
+             document.getElementById('icon4').addEventListener('mouseover', function () {sound4.play();});
+             document.getElementById('icon5').addEventListener('mouseover', function () {sound5.play();});
+             document.getElementById('icon6').addEventListener('mouseover', function () {sound6.play();});
+             document.getElementById('icon7').addEventListener('mouseover', function () {sound7.play();});
+             document.getElementById('icon8').addEventListener('mouseover', function () {sound8.play();});
+             document.getElementById('icon9').addEventListener('mouseover', function () {sound9.play();});
+
+        
+    }
+    </script>
+
+</body>
+</html>
